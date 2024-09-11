@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 
-export default function About() {
+export default function Activity() {
   const t = useTranslations('')
   return (
     <div className='px-12 py-24 text-center text-2xl'>

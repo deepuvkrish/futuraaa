@@ -31,10 +31,12 @@ export const Header: FC<Props> = ({ locale }) => {
           <Link lang={locale} href={`/activities`}>
             {t('activity_headline')}
           </Link>
-          <Link lang={locale} href={`/activities`}>
+          <Link lang={locale} href={`/shopping`}>
             {t('products_headline')}
           </Link>
-
+          <Link lang={locale} href={`/tours`}>
+            {t('tour_headline')}
+          </Link>
         </nav>
         <ThemeSwitch />
         <LangSwitcher />

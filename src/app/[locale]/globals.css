@@ -642,6 +642,11 @@ opacity: 0;
   font-weight: bolder;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.shop_head{
+  font-size: 30px;
+  font-weight: bolder;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .person_name_div{
   position: relative;
   margin-top: 40px;
@@ -819,4 +824,704 @@ opacity: 0;
     width: 62% !important;
   }
 }
+
+
+
+  .social span{
+    opacity: 0;
+    font-size: 14px !important;
+    color: #fff;
+    will-change: transform;
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    background-color: #0000008e;
+    width: 100%;
+    padding: 5px;
+    display: flex;position: relative;z-index: 999;
+    border-radius: 20px;
+  }
+
+  .social span h6{
+    font-size: 10px;
+    margin-inline-start: 10px;
+  }
+
+  h2 {
+    pointer-events: none;
+  }
+  
+ 
+  .container_tours {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid: 4;
+  }
+  .container_tours .card_tours {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 4px;
+    margin-block: 10px;  
+  }
+  .container_tours .card_tours:before {
+    content: "";
+    z-index: 99;
+    position: absolute;
+    top: -10px;
+    left: 32px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background-color: #E6E5E1;
+  }
+  .container_tours .card_tours:after {
+    content: "";
+    z-index: 99;
+    position: absolute;
+    bottom: -10px;
+    left: 32px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background-color: #E6E5E1;
+  }
+  .container_tours .card_tours ul {
+    z-index: 99;
+    position: absolute;
+    left: 39px;
+    top: 5px;
+    list-style-type: none;
+  }
+  .container_tours .card_tours ul li {
+    width: 2px;
+    height: 2px;
+    border-radius: 2px;
+    margin: 6px 0;
+    background-color: #E6E5E1;
+  }
+  .container_tours .card_tours h2 {
+    z-index: 99;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    bottom: 0;
+    right: 130px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .container_tours .card_tours .fa-arrow-right {
+    z-index: 100;
+    position: absolute;
+    right: 75px;
+    bottom: 25px;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  .container_tours .card_tours p {
+    z-index: 99;
+    position: absolute;
+    top: 20px;
+    right: 70px;
+    color: #333;
+    opacity: 0.7;
+    font-size: 12px;
+    letter-spacing: 1px;
+    writing-mode: vertical-lr;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .container_tours .card_tours .pic {
+    z-index: 100;
+    width: 300px;
+    height: 200px;
+    background-image: url("../../../public/hima.gif");
+    background-size: 100% 100%;
+    filter: grayscale(100%);
+  }
+  .container_tours .card_tours .social {
+    position: absolute;
+    left: 60px;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 180px;
+    height: 64px;
+    border-radius: 80px;
+  }
+  .container_tours .card_tours .social span:nth-of-type(5) {
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+  }
+  .container_tours .card_tours .social span:nth-of-type(4) {
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+  }
+
+  .container_tours .card_tours .social span:nth-of-type(3) {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+  .container_tours .card_tours .social span:nth-of-type(2) {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
+  .container_tours .card_tours .social span:nth-of-type(1) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+  }
+
+
+  .container_tours .card_tours:hover span {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  .container_tours .card_tours button {
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    width: 30px;
+    height: 30px;
+    background-color: #DA4D1D;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    mix-blend-mode: hard-light;
+  }
+  /* .container_tours .card_tours button svg {
+    font-size: 3rem;
+  } */
+  .container_tours .card_tours:hover button {
+    transform: scale(16.5);
+  }
+  .container_tours .card_tours:hover p {
+    color: #fff;
+  }
+  .container_tours .card_tours:hover .pic {
+    filter: grayscale(0);
+  }
+  .container_tours .card_tours2 .pic {
+    background-image: url("../../../public/bb.gif");
+  }
+  .container_tours .card_tours2 button {
+    background-color: #2b26c3;
+  }
+  .container_tours .card_tours3 button {
+    background-color: #13ae39;
+  }
+  .container_tours .card_tours3 .pic {
+    background-image: url("../../../public/north.gif");
+  }
+
+  .container_tours .card_tours4 button {
+    background-color: #022f59;
+  }
+  .container_tours .card_tours4 .pic {
+    background-image: url("../../../public/white.gif");
+  }
+  .container_tours .card_tours5 button {
+    background-color: #02551d;
+  }
+  .container_tours .card_tours5 .pic {
+    background-image: url("../../../public/vag.gif");
+  }
+
+  .container_tours .card_tours6 button {
+    background-color: #4f0255;
+  }
+  .container_tours .card_tours6 .pic {
+    background-image: url("../../../public/alp.gif");
+  }
+
+  .container_tours .card_tours7 button {
+    background-color: #325502;
+  }
+  .container_tours .card_tours7 .pic {
+    background-image: url("../../../public/waya.gif");
+  }
+  
+
+  .container_tours .card_tours8 button {
+    background-color: #350122;
+  }
+  .container_tours .card_tours8 .pic {
+    background-image: url("../../../public/vine.gif");
+  }
+
+  .container_tours .card_tours9 button {
+    background-color: #352b01;
+  }
+  .container_tours .card_tours9 .pic {
+    background-image: url("../../../public/swarna.gif");
+  }
+  
+  .container_tours .card_tours10 button {
+    background-color: #350101;
+  }
+  .container_tours .card_tours10 .pic {
+    background-image: url("../../../public/jap.gif");
+  }
+
+
+
+
+  .cssload-main {
+    position: absolute;
+    content: '';
+    left: 10%;
+    top:40%;
+    margin: 200px auto 0 auto;
+    transform: translate(-100%, -240%);
+      -o-transform: translate(-100%, -240%);
+      -ms-transform: translate(-100%, -240%);
+      -webkit-transform: translate(-100%, -240%);
+      -moz-transform: translate(-100%, -240%);
+  }
+  
+  .cssload-main *{
+    font-size:62px;
+  }
+  
+  .cssload-heart {
+    animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+      -o-animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+      -ms-animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+      -webkit-animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+      -moz-animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+    top: 50%;
+    content: '';
+    left: 50%;
+    position: absolute;
+  }
+  
+  .cssload-heartL {
+    width: 1em;
+    height: 1em;
+    border: 1px solid #FF0000;
+    background-color: #FF0000;
+    content: '';
+    position: absolute;
+    display: block;
+    border-radius: 100%;
+    animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+      -o-animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+      -ms-animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+      -webkit-animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+      -moz-animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+    transform: translate(-28px, -27px);
+      -o-transform: translate(-28px, -27px);
+      -ms-transform: translate(-28px, -27px);
+      -webkit-transform: translate(-28px, -27px);
+      -moz-transform: translate(-28px, -27px);
+  }
+  
+  .cssload-heartR {
+    width: 1em;
+    height: 1em;
+    border: 1px solid #FF0000;
+    background-color: #FF0000;
+    content: '';
+    position: absolute;
+    display: block;
+    border-radius: 100%;
+    transform: translate(28px, -27px);
+      -o-transform: translate(28px, -27px);
+      -ms-transform: translate(28px, -27px);
+      -webkit-transform: translate(28px, -27px);
+      -moz-transform: translate(28px, -27px);
+    animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+      -o-animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+      -ms-animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+      -webkit-animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+      -moz-animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+  }
+  
+  .cssload-square {
+    width: 1em;
+    height: 1em;
+    border: 1px solid #FF0000;
+    background-color: #FF0000;
+    position: relative;
+    display: block;
+    content: '';
+    transform: scale(1) rotate(-45deg);
+      -o-transform: scale(1) rotate(-45deg);
+      -ms-transform: scale(1) rotate(-45deg);
+      -webkit-transform: scale(1) rotate(-45deg);
+      -moz-transform: scale(1) rotate(-45deg);
+    animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+      -o-animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+      -ms-animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+      -webkit-animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+      -moz-animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+  }
+  
+  .cssload-shadow {
+    top: 97px;
+    left: 50%;
+    content: '';
+    position: relative;
+    display: block;
+    bottom: -.5em;
+    width: 1em;
+    height: .24em;
+    background-color: rgb(215,215,215);
+    border: 1px solid rgb(215,215,215);
+    border-radius: 50%;
+    animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+      -o-animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+      -ms-animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+      -webkit-animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+      -moz-animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+  }
+  
+  
+  
+  
+  
+  
+  
+  @keyframes cssload-square {
+    50% {
+      border-radius: 100%;
+      transform: scale(0.5) rotate(-45deg);
+    }
+    100% {
+      transform: scale(1) rotate(-45deg);
+    }
+  }
+  
+  @-o-keyframes cssload-square {
+    50% {
+      border-radius: 100%;
+      -o-transform: scale(0.5) rotate(-45deg);
+    }
+    100% {
+      -o-transform: scale(1) rotate(-45deg);
+    }
+  }
+  
+  @-ms-keyframes cssload-square {
+    50% {
+      border-radius: 100%;
+      -ms-transform: scale(0.5) rotate(-45deg);
+    }
+    100% {
+      -ms-transform: scale(1) rotate(-45deg);
+    }
+  }
+  
+  @-webkit-keyframes cssload-square {
+    50% {
+      border-radius: 100%;
+      -webkit-transform: scale(0.5) rotate(-45deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotate(-45deg);
+    }
+  }
+  
+  @-moz-keyframes cssload-square {
+    50% {
+      border-radius: 100%;
+      -moz-transform: scale(0.5) rotate(-45deg);
+    }
+    100% {
+      -moz-transform: scale(1) rotate(-45deg);
+    }
+  }
+  
+  @keyframes cssload-heart {
+    50% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(720deg);
+    }
+  }
+  
+  @-o-keyframes cssload-heart {
+    50% {
+      -o-transform: rotate(360deg);
+    }
+    100% {
+      -o-transform: rotate(720deg);
+    }
+  }
+  
+  @-ms-keyframes cssload-heart {
+    50% {
+      -ms-transform: rotate(360deg);
+    }
+    100% {
+      -ms-transform: rotate(720deg);
+    }
+  }
+  
+  @-webkit-keyframes cssload-heart {
+    50% {
+      -webkit-transform: rotate(360deg);
+    }
+    100% {
+      -webkit-transform: rotate(720deg);
+    }
+  }
+  
+  @-moz-keyframes cssload-heart {
+    50% {
+      -moz-transform: rotate(360deg);
+    }
+    100% {
+      -moz-transform: rotate(720deg);
+    }
+  }
+  
+  @keyframes cssload-heartL {
+    60% {
+      transform: scale(0.4);
+    }
+  }
+  
+  @-o-keyframes cssload-heartL {
+    60% {
+      -o-transform: scale(0.4);
+    }
+  }
+  
+  @-ms-keyframes cssload-heartL {
+    60% {
+      -ms-transform: scale(0.4);
+    }
+  }
+  
+  @-webkit-keyframes cssload-heartL {
+    60% {
+      -webkit-transform: scale(0.4);
+    }
+  }
+  
+  @-moz-keyframes cssload-heartL {
+    60% {
+      -moz-transform: scale(0.4);
+    }
+  }
+  
+  @keyframes cssload-heartR {
+    40% {
+      transform: scale(0.4);
+    }
+  }
+  
+  @-o-keyframes cssload-heartR {
+    40% {
+      -o-transform: scale(0.4);
+    }
+  }
+  
+  @-ms-keyframes cssload-heartR {
+    40% {
+      -ms-transform: scale(0.4);
+    }
+  }
+  
+  @-webkit-keyframes cssload-heartR {
+    40% {
+      -webkit-transform: scale(0.4);
+    }
+  }
+  
+  @-moz-keyframes cssload-heartR {
+    40% {
+      -moz-transform: scale(0.4);
+    }
+  }
+  
+  @keyframes cssload-shadow {
+    50% {
+      transform: scale(0.5);
+      border-color: rgb(228,228,228);
+    }
+  }
+  
+  @-o-keyframes cssload-shadow {
+    50% {
+      -o-transform: scale(0.5);
+      border-color: rgb(228,228,228);
+    }
+  }
+  
+  @-ms-keyframes cssload-shadow {
+    50% {
+      -ms-transform: scale(0.5);
+      border-color: rgb(228,228,228);
+    }
+  }
+  
+  @-webkit-keyframes cssload-shadow {
+    50% {
+      -webkit-transform: scale(0.5);
+      border-color: rgb(228,228,228);
+    }
+  }
+  
+  @-moz-keyframes cssload-shadow {
+    50% {
+      -moz-transform: scale(0.5);
+      border-color: rgb(228,228,228);
+    }
+  }
+
+
+
+
+  /* <==================== SHOPPING =================> */
+
+  
+.product-card {
+  width: 380px;
+  position: relative;
+  margin: 50px auto;
+  background: #fafafa;
+  border-radius: 20px;
+}
+
+.badge {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  padding: 3px 10px;
+  display: flex;
+  z-index: 999;
+}
+.newhot{
+  background: rgb(33, 142, 11);
+}
+
+.newnorm{
+  background: rgb(217, 221, 3);
+}
+.newcom{
+  background: rgb(221, 3, 3);
+
+}
+
+.product-tumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  padding: 10px;
+  background: #f0f0f0;
+  border-radius: 20px;
+}
+
+.product-tumb img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 20px;
+}
+
+.product-details {
+  padding: 15px;
+}
+
+.product-catagory {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ccc;
+  margin-bottom: 18px;
+}
+
+.product-details h4 a {
+  font-weight: 500;
+  display: flex;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  color: #363636;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.product-details h4 a:hover {
+  color: #fbb72c;
+}
+
+.product-details p {
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 18px;
+  color: #999;
+}
+
+.product-bottom-details {
+  overflow: hidden;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.product-bottom-details div {
+  float: left;
+  width: 50%;
+}
+
+.product-price {
+  font-size: 18px;
+  color: #fbb72c;
+  font-weight: 600;
+}
+
+.product-price small {
+  font-size: 80%;
+  font-weight: 400;
+  text-decoration: line-through;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.product-links {
+  text-align: right;
+}
+
+.product-links a {
+  display: flex;
+  margin-left: 5px;
+  color: #76b5ab;
+  transition: 0.3s;
+  font-size: 17px;
+  align-items: center;
+  justify-content: center ;
+}
+
+.product-links a:hover {
+  color: #fbb72c;
+}
+  
+
 }

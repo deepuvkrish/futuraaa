@@ -24,7 +24,7 @@ const space_grotesk = Space_Grotesk({
 })
 export const metadata: Metadata = {
   title: 'Futuraa',
-  description: "Deepiksha's Digital Diary",
+  description: "Deepiksha's Digital Diary"
 }
 
 export default function RootLayout({
@@ -47,10 +47,7 @@ export default function RootLayout({
           enableSystem
           attribute='class'
           defaultTheme='dark'
-          themes={[
-            'light',
-            'dark',
-          ]}
+          themes={['light', 'dark']}
         >
           <NextIntlClientProvider
             locale={locale}
