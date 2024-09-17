@@ -135,9 +135,9 @@ export default function Page() {
 
               <div className='gallery-item'>
                 <Image
-                  src='/skip.gif'
+                  src='/jump.gif'
                   className='gallery-image'
-                  alt='jogging'
+                  alt='jack'
                   width={400}
                   height={400}
                 />
@@ -148,14 +148,21 @@ export default function Page() {
                 </div>
 
                 <div className='gallery-item-info'>
-                  <ul>
+                  <ul className='flex flex-col'>
                     <li className='gallery-item-likes'>
-                      <span className='visually-hidden'>Likes:</span>
-                      <i className='fas fa-heart' aria-hidden='true'></i> 42
+                      <span className='visually-hidden'>JJ:</span>
+                      <i className='fas fa-heart' aria-hidden='true'></i>{' '}
+                      Jumping Jack
                     </li>
                     <li className='gallery-item-comments'>
                       <span className='visually-hidden'>Comments:</span>
-                      <i className='fas fa-comment' aria-hidden='true'></i> 1
+                      <i className='fas fa-comment' aria-hidden='true'></i> 3
+                      Reps
+                    </li>
+                    <li className='gallery-item-likes'>
+                      <span className='visually-hidden'>JJ:</span>
+                      <i className='fas fa-heart' aria-hidden='true'></i>{' '}
+                      100-200/set
                     </li>
                   </ul>
                 </div>
@@ -163,7 +170,7 @@ export default function Page() {
 
               <div className='gallery-item'>
                 <Image
-                  src='/skip.gif'
+                  src='/cycle.gif'
                   className='gallery-image'
                   alt='jogging'
                   width={400}
@@ -176,14 +183,20 @@ export default function Page() {
                 </div>
 
                 <div className='gallery-item-info'>
-                  <ul>
+                  <ul className='flex flex-col'>
                     <li className='gallery-item-likes'>
-                      <span className='visually-hidden'>Likes:</span>
-                      <i className='fas fa-heart' aria-hidden='true'></i> 38
+                      <span className='visually-hidden'>Cycling:</span>
+                      <i className='fas fa-heart' aria-hidden='true'></i>Cycling
                     </li>
                     <li className='gallery-item-comments'>
-                      <span className='visually-hidden'>Comments:</span>
-                      <i className='fas fa-comment' aria-hidden='true'></i> 0
+                      <span className='visually-hidden'>Reps</span>
+                      <i className='fas fa-comment' aria-hidden='true'></i> 1
+                      Set
+                    </li>
+                    <li className='gallery-item-likes'>
+                      <span className='visually-hidden'>Minutes:</span>
+                      <i className='fas fa-heart' aria-hidden='true'></i> 5-15
+                      Minutes
                     </li>
                   </ul>
                 </div>
@@ -191,7 +204,7 @@ export default function Page() {
 
               <div className='gallery-item'>
                 <Image
-                  src='/skip.gif'
+                  src='/coming.gif'
                   className='gallery-image'
                   alt='jogging'
                   width={400}
@@ -219,7 +232,7 @@ export default function Page() {
 
               <div className='gallery-item'>
                 <Image
-                  src='/skip.gif'
+                  src='/coming.gif'
                   className='gallery-image'
                   alt='jogging'
                   width={400}
@@ -242,7 +255,7 @@ export default function Page() {
 
               <div className='gallery-item'>
                 <Image
-                  src='/skip.gif'
+                  src='/coming.gif'
                   className='gallery-image'
                   alt='jogging'
                   width={400}
@@ -270,7 +283,7 @@ export default function Page() {
 
               <div className='gallery-item'>
                 <Image
-                  src='/skip.gif'
+                  src='/coming.gif'
                   className='gallery-image'
                   alt='jogging'
                   width={400}
@@ -293,7 +306,7 @@ export default function Page() {
 
               <div className='gallery-item'>
                 <Image
-                  src='/skip.gif'
+                  src='/coming.gif'
                   className='gallery-image'
                   alt='jogging'
                   width={400}
@@ -321,7 +334,7 @@ export default function Page() {
 
               <div className='gallery-item'>
                 <Image
-                  src='/skip.gif'
+                  src='/coming.gif'
                   className='gallery-image'
                   alt='jogging'
                   width={400}
@@ -344,7 +357,7 @@ export default function Page() {
 
               <div className='gallery-item'>
                 <Image
-                  src='/skip.gif'
+                  src='/coming.gif'
                   className='gallery-image'
                   alt='jogging'
                   width={400}
@@ -367,7 +380,7 @@ export default function Page() {
 
               <div className='gallery-item'>
                 <Image
-                  src='/skip.gif'
+                  src='/coming.gif'
                   className='gallery-image'
                   alt='jogging'
                   width={400}
