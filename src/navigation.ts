@@ -13,6 +13,9 @@ export const pathnames = {
   '/activities':'/activities',
   '/shopping':'/shopping',
   '/tours':'/tours',
+  '/home':'/home',
+  '/gym':'/gym',
+  '/gym/cardio':'gym/cardio',
 } satisfies Pathnames<typeof locales>
 
 export const { Link, redirect, usePathname, useRouter, getPathname } =

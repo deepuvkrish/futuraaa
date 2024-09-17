@@ -1,6 +1,5 @@
 import { useTranslations } from 'next-intl'
 import Button from './components/Button'
-
 export default function DashboardPage() {
   const t = useTranslations('')
   return (
@@ -10,6 +9,7 @@ export default function DashboardPage() {
           <span className='bg-span-bg bg-clip-text text-transparent'>
             {t('Futuraa')}
           </span>
+
           <br />
           {t('Our_Digital_Diary')}
         </h1>

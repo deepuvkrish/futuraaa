@@ -246,6 +246,7 @@ export default function Shopping() {
             </div>
           </div>
         </div>
+        
       </div>
 
       <div className=' m-4 flex items-center justify-center text-center'>

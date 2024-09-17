@@ -1,4 +1,5 @@
 {
+    "Theme":"Theme",
     "Home_headline":"ഹോം",
     "About": "ഞങ്ങളേക്കുറിച്ച്",
     "Support": "Support",
@@ -17,7 +18,11 @@
     "products_headline":"ഉൽപ്പന്നങ്ങൾ",
     "shopping_futura":"ഞങ്ങളുടെ കട",
     "our_tours":"ഞങ്ങളുടെ ദേശീയ യാത്രകൾ",
-    "our_inter_tours":"ഞങ്ങളുടെ അന്താരാഷ്ട്ര യാത്രകൾ"
+    "our_inter_tours":"ഞങ്ങളുടെ അന്താരാഷ്ട്ര യാത്രകൾ",
+    "home_headline":"Our Home",
+    "health_headline":"Health"
+
+
 
 
   }

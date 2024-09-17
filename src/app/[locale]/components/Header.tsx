@@ -3,7 +3,7 @@ import { Link } from '@/src/navigation'
 import { useTranslations } from 'next-intl'
 import { FC } from 'react'
 import GithubIcon from '../../icons/github'
-import LogoIcon from '../../icons/logo'
+import AyurLogo from '../../icons/logo'
 import LangSwitcher from './LangSwitcher'
 import ThemeSwitch from './ThemeSwitch'
 interface Props {
@@ -16,7 +16,7 @@ export const Header: FC<Props> = ({ locale }) => {
       <Link lang={locale} href='/'>
         <div className='flex flex-row items-center'>
           <div className='mb-2 h-auto w-auto'>
-            <LogoIcon />
+            <AyurLogo />
           </div>
         </div>
       </Link>
@@ -36,6 +36,12 @@ export const Header: FC<Props> = ({ locale }) => {
           </Link>
           <Link lang={locale} href={`/tours`}>
             {t('tour_headline')}
+          </Link>
+          <Link lang={locale} href={`/home`}>
+            {t('home_headline')}
+          </Link>
+          <Link lang={locale} href={`/gym`}>
+            {t('health_headline')}
           </Link>
         </nav>
         <ThemeSwitch />

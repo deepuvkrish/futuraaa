@@ -1,4 +1,5 @@
 {
+    "Theme":"Theme",
     "Home_headline":"ஹோம்",
     "About": "எங்களை பற்றி",
     "Support": "Support",
@@ -18,7 +19,11 @@
     "products_headline":"எங்கள் கடை",
     "shopping_futura":"எங்கள் கடை",
     "our_tours":"எங்கள் தேசிய பயணங்கள்",
-    "our_inter_tours":"எங்கள் சர்வதேச பயணங்கள்"
+    "our_inter_tours":"எங்கள் சர்வதேச பயணங்கள்",
+    "home_headline":"Our Home",
+    "health_headline":"Health"
+
+
 
   }
   
