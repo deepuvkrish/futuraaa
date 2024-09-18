@@ -21,7 +21,7 @@ export default function Page() {
           href={`#`}
           className='text-2xl font-extrabold text-gray-500 hover:underline'
         >
-          Cardio
+          Flexibility Training
         </Link>
       </div>
       <div className='flex w-full flex-col'>
