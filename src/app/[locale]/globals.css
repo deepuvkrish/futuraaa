@@ -1610,33 +1610,33 @@ a {
 }
 
 .cardio{
-  background-image: url('../../../public/card.webp');
+  background-image: url('../../../public/gym/card.webp');
   background-position: center;
   background-size: cover;
 
 }
 .flexing{
-  background-image: url('../../../public/flex.webp');
+  background-image: url('../../../public/gym/flex.webp');
   background-position: center;
   background-size: cover;
 }
 .anaroebic{
-  background-image: url('../../../public/anaerobic.webp');
+  background-image: url('../../../public/gym/anaerobic.webp');
   background-position: center;
   background-size: cover;
 }
 .pilates{
-  background-image: url('../../../public/pilates.webp');
+  background-image: url('../../../public/gym/pilates.webp');
   background-position: center;
   background-size: cover;
 }
 .highintensity{
-  background-image: url('../../../public/high.jpeg');
+  background-image: url('../../../public/gym/high.jpeg');
   background-position: center;
   background-size: cover;
 }
 .strength{
-  background-image: url('../../../public/strength.webp');
+  background-image: url('../../../public/gym/strength.webp');
   background-position: center;
   background-size: cover;
 }
@@ -1903,7 +1903,7 @@ a {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.672);
 }
 .gallery-item-info {
   display: none;
@@ -1911,8 +1911,9 @@ a {
 
 .gallery-item-info li {
   display: inline-block;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 
 .gallery-item-likes {
@@ -1925,6 +1926,10 @@ a {
   right: 1rem;
   font-size: 2.5rem;
   text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+.ratingbcg{
+  background: rgba(0, 0, 0, 0.593);
+  border-radius: 20px 0px 0px 20px;
 }
 .fa-clone,.fa-comment {
   transform: rotateY(180deg);

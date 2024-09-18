@@ -31,7 +31,7 @@ export default function Gym() {
             </div>
 
             <div className='skill_item'>
-              <Link href='#' className='skill-item_link flexing'>
+              <Link href={`gym/flex`} className='skill-item_link flexing'>
                 <div className='skill-item_bg'></div>
                 <div className='skill-item_title'>flexibility Training</div>
                 <div className='skill-item_date-box'>
