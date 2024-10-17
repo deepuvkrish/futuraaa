@@ -246,7 +246,229 @@ export default function Shopping() {
             </div>
           </div>
         </div>
-        
+
+        <div className='product-card-d'>
+          <div className='badge newhot'>
+            <FaStar />
+            <FaStar />
+            <FaStar />
+          </div>
+          <div className='product-tumb'>
+            <Image
+              src='/products/camera.webp'
+              alt='Eye Masks'
+              width={700}
+              height={700}
+              className='duration-700 hover:scale-105'
+            />
+          </div>
+          <div className='product-details'>
+            <span className='product-catagory'>Gadgets, Photography</span>
+            <h4>
+              <a href=''>Nikon D850 EV6</a>
+            </h4>
+            <p>24-120mm F/4G ED VR Lens | 64GB</p>
+            <div className='product-bottom-details'>
+              <div className='product-price'>₹2,38,000</div>
+
+              <div className='product-links'>
+                <a
+                  href='https://jokerandwitch.com/collections/watch-charms/minimal'
+                  target='__blank'
+                  className='flex'
+                >
+                  <FcPlus /> Check Here
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='product-card-d'>
+          <div className='badge newhot'>
+            <FaStar />
+            <FaStar />
+            <FaStar />
+          </div>
+          <div className='product-tumb'>
+            <Image
+              src='/products/tvs.webp'
+              alt='tvs rr310'
+              width={800}
+              height={800}
+              className='duration-700 hover:scale-105'
+            />
+          </div>
+          <div className='product-details'>
+            <span className='product-catagory'>Auto, Bikes</span>
+            <h4>
+              <a href=''>TVS 310RR</a>
+            </h4>
+            <p>164 kmph | 382 km | 174 kg | 37.48 bhp @ 9800 rpm</p>
+            <div className='product-bottom-details'>
+              <div className='product-price'>₹3,48,000</div>
+
+              <div className='product-links'>
+                <a
+                  href='https://jokerandwitch.com/collections/watch-charms/minimal'
+                  target='__blank'
+                  className='flex'
+                >
+                  <FcPlus /> Check Here
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='product-card-d'>
+          <div className='badge newnorm'>
+            <FaStar />
+          </div>
+          <div className='product-tumb'>
+            <Image
+              src='/products/yamaha.webp'
+              alt='yamaha'
+              width={700}
+              height={700}
+              className='duration-700 hover:scale-105'
+            />
+          </div>
+          <div className='product-details'>
+            <span className='product-catagory'>Auto, Bikes</span>
+            <h4>
+              <a href=''>Yamaha Aerox</a>
+            </h4>
+            <p>155 cc | 40 kmph | 14.75 bph</p>
+            <div className='product-bottom-details'>
+              <div className='product-price'>₹2,00,000</div>
+
+              <div className='product-links'>
+                <a
+                  href='https://jokerandwitch.com/collections/watch-charms/minimal'
+                  target='__blank'
+                  className='flex'
+                >
+                  <FcPlus /> Check Here
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='product-card-d'>
+          <div className='badge newhot'>
+            <FaStar />
+            <FaStar />
+            <FaStar />
+          </div>
+          <div className='product-tumb'>
+            <Image
+              src='/products/toyota.webp'
+              alt='Hycross car'
+              width={700}
+              height={700}
+              className='duration-700 hover:scale-105'
+            />
+          </div>
+          <div className='product-details'>
+            <span className='product-catagory'>Auto, Cars</span>
+            <h4>
+              <a href=''>Toyota Hycross</a>
+            </h4>
+            <p>
+              1987 cc | Hybrid (Electric + Petrol) | Automatic (e-CVT) | 16.13
+              kmpl | 173 bhp
+            </p>
+            <div className='product-bottom-details'>
+              <div className='product-price'>₹31,00,000</div>
+
+              <div className='product-links'>
+                <a
+                  href='https://jokerandwitch.com/collections/watch-charms/minimal'
+                  target='__blank'
+                  className='flex'
+                >
+                  <FcPlus /> Check Here
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='product-card-d'>
+          <div className='badge newhot'>
+            <FaStar />
+            <FaStar />
+            <FaStar />
+          </div>
+          <div className='product-tumb'>
+            <Image
+              src='/products/volvos90.avif'
+              alt='Eye Masks'
+              width={900}
+              height={900}
+              className='duration-700 hover:scale-105'
+            />
+          </div>
+          <div className='product-details'>
+            <span className='product-catagory'>Auto, Bikes</span>
+            <h4>
+              <a href=''>Volvo S90</a>
+            </h4>
+            <p>1969 cc | Petrol | Automatic | 14.7 kmpl | 250 bhp</p>
+            <div className='product-bottom-details'>
+              <div className='product-price'>₹68,25,000</div>
+
+              <div className='product-links'>
+                <a
+                  href='https://jokerandwitch.com/collections/watch-charms/minimal'
+                  target='__blank'
+                  className='flex'
+                >
+                  <FcPlus /> Check Here
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='product-card-d'>
+          <div className='badge newhot'>
+            <FaStar />
+            <FaStar />
+            <FaStar />
+          </div>
+          <div className='product-tumb'>
+            <Image
+              src='/products/kia.webp'
+              alt='Eye Masks'
+              width={700}
+              height={700}
+              className='duration-700 hover:scale-105'
+            />
+          </div>
+          <div className='product-details'>
+            <span className='product-catagory'>Auto, Cars</span>
+            <h4>
+              <a href=''>Kia EV6</a>
+            </h4>
+            <p>325 hp | Auto | Electric | 528km</p>
+            <div className='product-bottom-details'>
+              <div className='product-price'>₹75,00,000</div>
+
+              <div className='product-links'>
+                <a
+                  href='https://jokerandwitch.com/collections/watch-charms/minimal'
+                  target='__blank'
+                  className='flex'
+                >
+                  <FcPlus /> Check Here
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className=' m-4 flex items-center justify-center text-center'>

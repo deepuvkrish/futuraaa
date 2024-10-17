@@ -169,6 +169,7 @@
   }
   body {
     @apply bg-background text-primary;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
 
@@ -1399,10 +1400,17 @@ opacity: 0;
 
   
 .product-card {
-  width: 380px;
+  width: 255px;
   position: relative;
-  margin: 50px auto;
-  background: #fafafa;
+  margin: 25px auto;
+  background: #ffdef6;
+  border-radius: 20px;
+}
+.product-card-d{
+  width: 255px;
+  position: relative;
+  margin: 25px auto;
+  background: #deefff;
   border-radius: 20px;
 }
 
@@ -1434,7 +1442,7 @@ opacity: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 300px;
+  height: 190px;
   padding: 10px;
   background: #f0f0f0;
   border-radius: 20px;
@@ -1444,6 +1452,7 @@ opacity: 0;
   max-width: 100%;
   max-height: 100%;
   border-radius: 20px;
+  object-fit: cover;
 }
 
 .product-details {
@@ -1452,15 +1461,15 @@ opacity: 0;
 
 .product-catagory {
   display: block;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #ccc;
+  color: #a9a7a7;
   margin-bottom: 18px;
 }
 
 .product-details h4 a {
-  font-weight: 500;
+  font-weight: 700;
   display: flex;
   margin-bottom: 18px;
   text-transform: uppercase;
@@ -1474,8 +1483,8 @@ opacity: 0;
 }
 
 .product-details p {
-  font-size: 15px;
-  line-height: 22px;
+  font-size: 11px;
+  line-height: 14px;
   margin-bottom: 18px;
   color: #999;
 }
@@ -1507,6 +1516,9 @@ opacity: 0;
 
 .product-links {
   text-align: right;
+  background: #1d1d1d;
+  border-radius: 15px;
+  padding: 5px;
 }
 
 .product-links a {
@@ -1514,7 +1526,7 @@ opacity: 0;
   margin-left: 5px;
   color: #76b5ab;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 13px;
   align-items: center;
   justify-content: center ;
 }
@@ -1529,6 +1541,8 @@ opacity: 0;
 	position: relative;
 	width:100%;
 	padding-top: 10%;
+  overflow: hidden;
+  bottom:-14rem;
 }
 .svg-cloud01 {
 	width:100%;
@@ -2094,6 +2108,80 @@ a {
   }
 }
 
+/* CARS BIKES */
 
+.super_sports{
+  background-image: linear-gradient(90deg, transparent,rgba(139, 0, 0, 0.050),rgba(139, 0, 0, 0.500),  darkred);
+  /* animation: 5s bgcolor infinite;
+  animation-timing-function: linear; */
+}
 
+@keyframes bgcolor {
+  0% {
+    background-image: linear-gradient(90deg, transparent,rgba(139, 0, 0, 0.15),rgba(139, 0, 0, 0.500),  darkred);
+  }
+  50% {
+    background-image: linear-gradient(90deg, rgba(139, 0, 0, 0.2),rgb(139, 0, 0),rgb(139, 0, 0) );
+  }
+  100% {
+    background-image: linear-gradient(90deg, transparent,rgba(139, 0, 0, 0.15),rgba(139, 0, 0, 0.500),  darkred);
+  }
+}
+
+.supertext{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+}
+.sss{
+  font-size: 2em;
+}
+
+.carimage{
+  position: relative;
+  background-image: url('../../../public/auto/cars/gifs/merc.PNG');
+  background-position:center;
+  background-size: cover;
+  height: 360px;
+  width: 201px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  color: rgba(0, 0, 0, 0.045);
+  transition: 800ms;
+}
+
+.caroverlay{
+  background: rgba(0, 0, 0, 0.376);
+  height: 360px;
+  width: 201px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  color: rgba(0, 0, 0, 0.045);
+  transition: 800ms;
+}
+
+.caroverlay img{
+  visibility: hidden;
+}
+.caroverlay:hover{
+  background: rgba(0, 0, 0, 0.91);
+  color:white;
+}
+.mercone:hover{
+  background-image: url('../../../public/auto/cars/gifs/mercone.gif');
+  background-position:center;
+  background-size: cover;
+  color:white;
+}
+.caroverlay:hover img{
+  visibility: visible;
+}
+.caroverlay:hover .carimage{
+  background-image: url('../../../public/auto/cars/gifs/mercone.gif');
+  background-position:center;
+  background-size: cover;
+}
 }
