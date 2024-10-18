@@ -368,6 +368,49 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+            {/* Mclaren 720s*/}
+            <div className='mb-8 flex w-[400px] flex-col  justify-center bg-slate-900'>
+              <video height='200' width='400' controls className='rounded-lg'>
+                <source src='/auto/cars/vids/mclaren720.mp4' />
+              </video>
+              <div className='video_details relative flex h-20 w-full flex-col'>
+                <div className='carlogo absolute right-0 top-1/2 z-10 flex h-10 w-10'>
+                  <Image
+                    src='/auto/cars/mclaren.png'
+                    alt='car'
+                    height={50}
+                    width={50}
+                  />
+                </div>
+                <div className='w- relative z-20 flex justify-between px-2 py-2'>
+                  <BsFillHandThumbsUpFill className='likebtn h-5 w-5 text-green-500' />
+                  <span>Mclaren 720S</span>
+                  <BsFillHandThumbsDownFill className='dislikebtn h-5 w-5 text-red-700' />
+                </div>
+                <div className='video_texts flex w-full items-center justify-evenly p-2'>
+                  <div className='flex items-center'>
+                    <BsCurrencyRupee />
+                    <p>5.8</p>
+                    <span>Crs</span>
+                  </div>
+                  <div className='flex items-center'>
+                    <GiSpeedometer />
+                    <p>341</p>
+                    <span>kmph</span>
+                  </div>
+                  <div className='flex items-center'>
+                    <Image
+                      src='/auto/flag/eng.png'
+                      alt='logo'
+                      height={10}
+                      width={20}
+                    />
+                    <span>Britain</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
