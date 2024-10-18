@@ -6,10 +6,9 @@ import {
   BsFillHandThumbsDownFill
 } from 'react-icons/bs'
 
-import { GiSpeedometer } from "react-icons/gi";
+import { GiSpeedometer } from 'react-icons/gi'
 import { BsCurrencyRupee } from 'react-icons/bs'
-import ReactPlayer from "react-player";
-
+import ReactPlayer from 'react-player'
 
 const cars = [
   {
@@ -123,8 +122,7 @@ const cars = [
 ]
 
 export default function Home() {
-
-  let videosrc = "/auto/cars/sian.mp4";
+  let videosrc = '/auto/cars/sian.mp4'
   const t = useTranslations('')
   return (
     <div className='px-12'>
@@ -155,24 +153,29 @@ export default function Home() {
         </div>
 
         <div className='flex w-full flex-col'>
-          <div className='mb-10 flex w-full justify-evenly flex-wrap'>
-             {/* Lamborgini Sian */}
-            <div className='flex flex-col w-[400px] justify-center  bg-slate-900 mb-8'>
-              <video height="200" width="400" controls className='rounded-lg'>
-                <source src="/auto/cars/vids/sian.mp4" />
+          <div className='mb-10 flex w-full flex-wrap justify-evenly'>
+            {/* Lamborgini Sian */}
+            <div className='mb-8 flex w-[400px] flex-col  justify-center bg-slate-900'>
+              <video height='200' width='400' controls className='rounded-lg'>
+                <source src='/auto/cars/vids/sian.mp4' />
               </video>
-              <div className='video_details flex flex-col h-20 w-full relative'>
-                <div className='flex w-10 h-10 absolute top-1/2 carlogo z-10 right-0'>
-                  <Image src="/auto/cars/lamb.png" alt='car' height={50} width={50} />
+              <div className='video_details relative flex h-20 w-full flex-col'>
+                <div className='carlogo absolute right-0 top-1/2 z-10 flex h-10 w-10'>
+                  <Image
+                    src='/auto/cars/lamb.png'
+                    alt='car'
+                    height={50}
+                    width={50}
+                  />
                 </div>
-                <div className='flex w- justify-between px-2 py-2 relative z-20'>
-                  <BsFillHandThumbsUpFill className='h-5 w-5 text-green-500 likebtn' />
+                <div className='w- relative z-20 flex justify-between px-2 py-2'>
+                  <BsFillHandThumbsUpFill className='likebtn h-5 w-5 text-green-500' />
                   <span>Lamborghini Sian</span>
-                  <BsFillHandThumbsDownFill className='h-5 w-5 text-red-700 dislikebtn' />
+                  <BsFillHandThumbsDownFill className='dislikebtn h-5 w-5 text-red-700' />
                 </div>
-                <div className='video_texts flex w-full p-2 items-center justify-evenly'>
+                <div className='video_texts flex w-full items-center justify-evenly p-2'>
                   <div className='flex items-center'>
-                    <BsCurrencyRupee /> 
+                    <BsCurrencyRupee />
                     <p>25</p>
                     <span>Crs</span>
                   </div>
@@ -182,33 +185,40 @@ export default function Home() {
                     <span>kmph</span>
                   </div>
                   <div className='flex items-center'>
-                    <Image src="/auto/flag/italy.png" alt='logo' height={10} width={20}/>
+                    <Image
+                      src='/auto/flag/italy.png'
+                      alt='logo'
+                      height={10}
+                      width={20}
+                    />
                     <span>Italy</span>
                   </div>
-                  
                 </div>
               </div>
             </div>
 
-
-
-             {/* Gamera */}
-            <div className='flex flex-col w-[400px] justify-center  bg-slate-900 mb-8'>
-              <video height="200" width="400" controls className='rounded-lg'>
-                <source src="/auto/cars/vids/gamera-3.mp4" />
+            {/* Gamera */}
+            <div className='mb-8 flex w-[400px] flex-col  justify-center bg-slate-900'>
+              <video height='200' width='400' controls className='rounded-lg'>
+                <source src='/auto/cars/vids/gamera-3.mp4' />
               </video>
-              <div className='video_details flex flex-col h-20 w-full relative'>
-                <div className='flex w-10 h-10 absolute top-1/2 carlogo z-10 right-0'>
-                  <Image src="/auto/cars/koe.png" alt='car' height={50} width={50} />
+              <div className='video_details relative flex h-20 w-full flex-col'>
+                <div className='carlogo absolute right-0 top-1/2 z-10 flex h-10 w-10'>
+                  <Image
+                    src='/auto/cars/koe.png'
+                    alt='car'
+                    height={50}
+                    width={50}
+                  />
                 </div>
-                <div className='flex w- justify-between px-2 py-2 relative z-20'>
-                  <BsFillHandThumbsUpFill className='h-5 w-5 text-green-500 likebtn' />
+                <div className='w- relative z-20 flex justify-between px-2 py-2'>
+                  <BsFillHandThumbsUpFill className='likebtn h-5 w-5 text-green-500' />
                   <span>Koenigsegg Gamera</span>
-                  <BsFillHandThumbsDownFill className='h-5 w-5 text-red-700 dislikebtn' />
+                  <BsFillHandThumbsDownFill className='dislikebtn h-5 w-5 text-red-700' />
                 </div>
-                <div className='video_texts flex w-full p-2 items-center justify-evenly'>
+                <div className='video_texts flex w-full items-center justify-evenly p-2'>
                   <div className='flex items-center'>
-                    <BsCurrencyRupee /> 
+                    <BsCurrencyRupee />
                     <p>13</p>
                     <span>Crs</span>
                   </div>
@@ -218,32 +228,40 @@ export default function Home() {
                     <span>kmph</span>
                   </div>
                   <div className='flex items-center'>
-                    <Image src="/auto/flag/sweden.png" alt='logo' height={10} width={20}/>
+                    <Image
+                      src='/auto/flag/sweden.png'
+                      alt='logo'
+                      height={10}
+                      width={20}
+                    />
                     <span>Sweden</span>
                   </div>
-                  
                 </div>
               </div>
             </div>
 
-
             {/* Bugatti */}
-            <div className='flex flex-col w-[400px] justify-center  bg-slate-900 mb-8'>
-              <video height="200" width="400" controls className='rounded-lg'>
-                <source src="/auto/cars/vids/bugatti-1.mp4" />
+            <div className='mb-8 flex w-[400px] flex-col  justify-center bg-slate-900'>
+              <video height='200' width='400' controls className='rounded-lg'>
+                <source src='/auto/cars/vids/bugatti-1.mp4' />
               </video>
-              <div className='video_details flex flex-col h-20 w-full relative'>
-                <div className='flex w-10 h-10 absolute top-1/2 carlogo z-10 right-0'>
-                  <Image src="/auto/cars/bugatti.png" alt='car' height={50} width={50} />
+              <div className='video_details relative flex h-20 w-full flex-col'>
+                <div className='carlogo absolute right-0 top-1/2 z-10 flex h-10 w-10'>
+                  <Image
+                    src='/auto/cars/bugatti.png'
+                    alt='car'
+                    height={50}
+                    width={50}
+                  />
                 </div>
-                <div className='flex w- justify-between px-2 py-2 relative z-20'>
-                  <BsFillHandThumbsUpFill className='h-5 w-5 text-green-500 likebtn' />
+                <div className='w- relative z-20 flex justify-between px-2 py-2'>
+                  <BsFillHandThumbsUpFill className='likebtn h-5 w-5 text-green-500' />
                   <span>Bugatti Chiron</span>
-                  <BsFillHandThumbsDownFill className='h-5 w-5 text-red-700 dislikebtn' />
+                  <BsFillHandThumbsDownFill className='dislikebtn h-5 w-5 text-red-700' />
                 </div>
-                <div className='video_texts flex w-full p-2 items-center justify-evenly'>
+                <div className='video_texts flex w-full items-center justify-evenly p-2'>
                   <div className='flex items-center'>
-                    <BsCurrencyRupee /> 
+                    <BsCurrencyRupee />
                     <p>28</p>
                     <span>Crs</span>
                   </div>
@@ -253,32 +271,40 @@ export default function Home() {
                     <span>kmph</span>
                   </div>
                   <div className='flex items-center'>
-                    <Image src="/auto/flag/france.png" alt='logo' height={10} width={20}/>
+                    <Image
+                      src='/auto/flag/france.png'
+                      alt='logo'
+                      height={10}
+                      width={20}
+                    />
                     <span>France</span>
                   </div>
-                  
                 </div>
               </div>
             </div>
 
-
-             {/* pagani */}
-             <div className='flex flex-col w-[400px] justify-center  bg-slate-900 mb-8'>
-              <video height="200" width="400" controls className='rounded-lg'>
-                <source src="/auto/cars/vids/pagani.mp4" />
+            {/* pagani */}
+            <div className='mb-8 flex w-[400px] flex-col  justify-center bg-slate-900'>
+              <video height='200' width='400' controls className='rounded-lg'>
+                <source src='/auto/cars/vids/pagani.mp4' />
               </video>
-              <div className='video_details flex flex-col h-20 w-full relative'>
-                <div className='flex w-10 h-10 absolute top-1/2 carlogo z-10 right-0'>
-                  <Image src="/auto/cars/pagani.png" alt='car' height={50} width={50} />
+              <div className='video_details relative flex h-20 w-full flex-col'>
+                <div className='carlogo absolute right-0 top-1/2 z-10 flex h-10 w-10'>
+                  <Image
+                    src='/auto/cars/pagani.png'
+                    alt='car'
+                    height={50}
+                    width={50}
+                  />
                 </div>
-                <div className='flex w- justify-between px-2 py-2 relative z-20'>
-                  <BsFillHandThumbsUpFill className='h-5 w-5 text-green-500 likebtn' />
+                <div className='w- relative z-20 flex justify-between px-2 py-2'>
+                  <BsFillHandThumbsUpFill className='likebtn h-5 w-5 text-green-500' />
                   <span>Pagani Huayra</span>
-                  <BsFillHandThumbsDownFill className='h-5 w-5 text-red-700 dislikebtn' />
+                  <BsFillHandThumbsDownFill className='dislikebtn h-5 w-5 text-red-700' />
                 </div>
-                <div className='video_texts flex w-full p-2 items-center justify-evenly'>
+                <div className='video_texts flex w-full items-center justify-evenly p-2'>
                   <div className='flex items-center'>
-                    <BsCurrencyRupee /> 
+                    <BsCurrencyRupee />
                     <p>29</p>
                     <span>Crs</span>
                   </div>
@@ -288,31 +314,40 @@ export default function Home() {
                     <span>kmph</span>
                   </div>
                   <div className='flex items-center'>
-                    <Image src="/auto/flag/italy.png" alt='logo' height={10} width={20}/>
+                    <Image
+                      src='/auto/flag/italy.png'
+                      alt='logo'
+                      height={10}
+                      width={20}
+                    />
                     <span>Italy</span>
                   </div>
-                  
                 </div>
               </div>
             </div>
 
             {/* Mclaren */}
-            <div className='flex flex-col w-[400px] justify-center  bg-slate-900 mb-8'>
-              <video height="200" width="400" controls className='rounded-lg'>
-                <source src="/auto/cars/vids/mclaren.mp4" />
+            <div className='mb-8 flex w-[400px] flex-col  justify-center bg-slate-900'>
+              <video height='200' width='400' controls className='rounded-lg'>
+                <source src='/auto/cars/vids/mclaren.mp4' />
               </video>
-              <div className='video_details flex flex-col h-20 w-full relative'>
-                <div className='flex w-10 h-10 absolute top-1/2 carlogo z-10 right-0'>
-                  <Image src="/auto/cars/mclaren.png" alt='car' height={50} width={50} />
+              <div className='video_details relative flex h-20 w-full flex-col'>
+                <div className='carlogo absolute right-0 top-1/2 z-10 flex h-10 w-10'>
+                  <Image
+                    src='/auto/cars/mclaren.png'
+                    alt='car'
+                    height={50}
+                    width={50}
+                  />
                 </div>
-                <div className='flex w- justify-between px-2 py-2 relative z-20'>
-                  <BsFillHandThumbsUpFill className='h-5 w-5 text-green-500 likebtn' />
+                <div className='w- relative z-20 flex justify-between px-2 py-2'>
+                  <BsFillHandThumbsUpFill className='likebtn h-5 w-5 text-green-500' />
                   <span>Mclaren P1</span>
-                  <BsFillHandThumbsDownFill className='h-5 w-5 text-red-700 dislikebtn' />
+                  <BsFillHandThumbsDownFill className='dislikebtn h-5 w-5 text-red-700' />
                 </div>
-                <div className='video_texts flex w-full p-2 items-center justify-evenly'>
+                <div className='video_texts flex w-full items-center justify-evenly p-2'>
                   <div className='flex items-center'>
-                    <BsCurrencyRupee /> 
+                    <BsCurrencyRupee />
                     <p>3.5</p>
                     <span>Crs</span>
                   </div>
@@ -322,19 +357,18 @@ export default function Home() {
                     <span>kmph</span>
                   </div>
                   <div className='flex items-center'>
-                    <Image src="/auto/flag/eng.png" alt='logo' height={10} width={20}/>
+                    <Image
+                      src='/auto/flag/eng.png'
+                      alt='logo'
+                      height={10}
+                      width={20}
+                    />
                     <span>Britain</span>
                   </div>
-                  
                 </div>
               </div>
             </div>
-
-
-
           </div>
-
-         
         </div>
       </div>
     </div>
