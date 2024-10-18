@@ -5,9 +5,11 @@ import {
   BsFillHandThumbsUpFill,
   BsFillHandThumbsDownFill
 } from 'react-icons/bs'
-import { FaCommentDots } from 'react-icons/fa'
-import { RiSendPlaneFill } from 'react-icons/ri'
+
+import { GiSpeedometer } from "react-icons/gi";
 import { BsCurrencyRupee } from 'react-icons/bs'
+import ReactPlayer from "react-player";
+
 
 const cars = [
   {
@@ -121,6 +123,8 @@ const cars = [
 ]
 
 export default function Home() {
+
+  let videosrc = "/auto/cars/sian.mp4";
   const t = useTranslations('')
   return (
     <div className='px-12'>
@@ -151,362 +155,186 @@ export default function Home() {
         </div>
 
         <div className='flex w-full flex-col'>
-          <div className='autocar mb-10 flex w-full justify-evenly'>
-            {/* Lamborgini Reveulto */}
-            <div className='autocar relative flex w-[200px] flex-col items-center justify-center'>
-              <Image
-                src='/auto/cars/gifs/reveulto.gif'
-                alt='cars'
-                width={200}
-                height={450}
-                className='rounded-2xl'
-              />
-              <div className='caroverlay absolute flex flex-col rounded-2xl'>
-                <Image
-                  src='/auto/cars/lamb.png'
-                  alt='koenigsegg logo'
-                  height={75}
-                  width={75}
-                  className='m-2'
-                />
-                <h1 className='text-3xl font-bold'>Reveulto</h1>
-                <h2 className='flex items-center justify-center text-xl'>
-                  <BsCurrencyRupee /> 12 Crore
-                </h2>
-              </div>
-              <div className='comment_section relative mt-3 flex w-full flex-col'>
-                <div className='interactions flex w-full justify-between'>
-                  <BsFillHandThumbsUpFill className='h-5 w-5 text-green-500' />
-                  <BsFillHandThumbsDownFill className='h-5 w-5 text-red-700' />
+          <div className='mb-10 flex w-full justify-evenly flex-wrap'>
+             {/* Lamborgini Sian */}
+            <div className='flex flex-col w-[400px] justify-center  bg-slate-900 mb-8'>
+              <video height="200" width="400" controls className='rounded-lg'>
+                <source src="/auto/cars/vids/sian.mp4" />
+              </video>
+              <div className='video_details flex flex-col h-20 w-full relative'>
+                <div className='flex w-10 h-10 absolute top-1/2 carlogo z-10 right-0'>
+                  <Image src="/auto/cars/lamb.png" alt='car' height={50} width={50} />
+                </div>
+                <div className='flex w- justify-between px-2 py-2 relative z-20'>
+                  <BsFillHandThumbsUpFill className='h-5 w-5 text-green-500 likebtn' />
+                  <span>Lamborghini Sian</span>
+                  <BsFillHandThumbsDownFill className='h-5 w-5 text-red-700 dislikebtn' />
+                </div>
+                <div className='video_texts flex w-full p-2 items-center justify-evenly'>
+                  <div className='flex items-center'>
+                    <BsCurrencyRupee /> 
+                    <p>25</p>
+                    <span>Crs</span>
+                  </div>
+                  <div className='flex items-center'>
+                    <GiSpeedometer />
+                    <p>355</p>
+                    <span>kmph</span>
+                  </div>
+                  <div className='flex items-center'>
+                    <Image src="/auto/flag/italy.png" alt='logo' height={10} width={20}/>
+                    <span>Italy</span>
+                  </div>
+                  
                 </div>
               </div>
             </div>
 
-            {/* Lamborgini Aventador */}
-            <div className='autocar relative flex w-[200px] flex-col items-center justify-center'>
-              <Image
-                src='/auto/cars/gifs/lamb.gif'
-                alt='cars'
-                width={200}
-                height={450}
-                className='rounded-2xl'
-              />
-              <div className='caroverlay absolute flex flex-col rounded-2xl'>
-                <Image
-                  src='/auto/cars/lamb.png'
-                  alt='koenigsegg logo'
-                  height={75}
-                  width={75}
-                  className='m-2'
-                />
-                <h1 className='text-3xl font-bold'>Aventador</h1>
-                <h2 className='flex items-center justify-center text-xl'>
-                  <BsCurrencyRupee /> 5.1 Crore
-                </h2>
-              </div>
-              <div className='comment_section relative mt-3 flex w-full flex-col'>
-                <div className='interactions flex w-full justify-between'>
-                  <BsFillHandThumbsUpFill className='h-5 w-5 text-green-500' />
-                  <BsFillHandThumbsDownFill className='h-5 w-5 text-red-700' />
+
+
+             {/* Gamera */}
+            <div className='flex flex-col w-[400px] justify-center  bg-slate-900 mb-8'>
+              <video height="200" width="400" controls className='rounded-lg'>
+                <source src="/auto/cars/vids/gamera-3.mp4" />
+              </video>
+              <div className='video_details flex flex-col h-20 w-full relative'>
+                <div className='flex w-10 h-10 absolute top-1/2 carlogo z-10 right-0'>
+                  <Image src="/auto/cars/koe.png" alt='car' height={50} width={50} />
                 </div>
-              </div>
-            </div>
-            {/* Lamborgini Dual Avendator */}
-            <div className='autocar relative flex w-[200px] flex-col items-center justify-center'>
-              <Image
-                src='/auto/cars/gifs/lambo.gif'
-                alt='cars'
-                width={200}
-                height={450}
-                className='rounded-2xl'
-              />
-              <div className='caroverlay absolute flex flex-col rounded-2xl'>
-                <Image
-                  src='/auto/cars/lamb.png'
-                  alt='koenigsegg logo'
-                  height={75}
-                  width={75}
-                  className='m-2'
-                />
-                <h1 className='text-3xl font-bold'>Aventador</h1>
-                <h2 className='flex items-center justify-center text-xl'>
-                  <BsCurrencyRupee /> 5.1 Crore
-                </h2>
-              </div>
-              <div className='comment_section relative mt-3 flex w-full flex-col'>
-                <div className='interactions flex w-full justify-between'>
-                  <BsFillHandThumbsUpFill className='h-5 w-5 text-green-500' />
-                  <BsFillHandThumbsDownFill className='h-5 w-5 text-red-700' />
+                <div className='flex w- justify-between px-2 py-2 relative z-20'>
+                  <BsFillHandThumbsUpFill className='h-5 w-5 text-green-500 likebtn' />
+                  <span>Koenigsegg Gamera</span>
+                  <BsFillHandThumbsDownFill className='h-5 w-5 text-red-700 dislikebtn' />
                 </div>
-              </div>
-            </div>
-            {/* Lamborgini Sian */}
-            <div className='autocar relative flex w-[200px] flex-col items-center justify-center'>
-              <Image
-                src='/auto/cars/gifs/sian2.gif'
-                alt='cars'
-                width={200}
-                height={450}
-                className='rounded-2xl'
-              />
-              <div className='caroverlay absolute flex flex-col rounded-2xl'>
-                <Image
-                  src='/auto/cars/lamb.png'
-                  alt='koenigsegg logo'
-                  height={75}
-                  width={75}
-                  className='m-2'
-                />
-                <h1 className='text-3xl font-bold'>Sian</h1>
-                <h2 className='flex items-center justify-center text-xl'>
-                  <BsCurrencyRupee /> 25 Crore
-                </h2>
-              </div>
-              <div className='comment_section relative mt-3 flex w-full flex-col'>
-                <div className='interactions flex w-full justify-between'>
-                  <BsFillHandThumbsUpFill className='h-5 w-5 text-green-500' />
-                  <BsFillHandThumbsDownFill className='h-5 w-5 text-red-700' />
+                <div className='video_texts flex w-full p-2 items-center justify-evenly'>
+                  <div className='flex items-center'>
+                    <BsCurrencyRupee /> 
+                    <p>13</p>
+                    <span>Crs</span>
+                  </div>
+                  <div className='flex items-center'>
+                    <GiSpeedometer />
+                    <p>400</p>
+                    <span>kmph</span>
+                  </div>
+                  <div className='flex items-center'>
+                    <Image src="/auto/flag/sweden.png" alt='logo' height={10} width={20}/>
+                    <span>Sweden</span>
+                  </div>
+                  
                 </div>
               </div>
             </div>
 
-            {/* Lamborgini Sian */}
-            <div className='autocar relative flex w-[200px] flex-col items-center justify-center'>
-              <Image
-                src='/auto/cars/gifs/sian.gif'
-                alt='cars'
-                width={200}
-                height={450}
-                className='rounded-2xl'
-              />
-              <div className='caroverlay absolute flex flex-col rounded-2xl'>
-                <Image
-                  src='/auto/cars/lamb.png'
-                  alt='koenigsegg logo'
-                  height={75}
-                  width={75}
-                  className='m-2'
-                />
-                <h1 className='text-3xl font-bold'>Sian</h1>
-                <h2 className='flex items-center justify-center text-xl'>
-                  <BsCurrencyRupee /> 25 Crore
-                </h2>
-              </div>
-              <div className='comment_section relative mt-3 flex w-full flex-col'>
-                <div className='interactions flex w-full justify-between'>
-                  <BsFillHandThumbsUpFill className='h-5 w-5 text-green-500' />
-                  <BsFillHandThumbsDownFill className='h-5 w-5 text-red-700' />
+
+            {/* Bugatti */}
+            <div className='flex flex-col w-[400px] justify-center  bg-slate-900 mb-8'>
+              <video height="200" width="400" controls className='rounded-lg'>
+                <source src="/auto/cars/vids/bugatti-1.mp4" />
+              </video>
+              <div className='video_details flex flex-col h-20 w-full relative'>
+                <div className='flex w-10 h-10 absolute top-1/2 carlogo z-10 right-0'>
+                  <Image src="/auto/cars/bugatti.png" alt='car' height={50} width={50} />
+                </div>
+                <div className='flex w- justify-between px-2 py-2 relative z-20'>
+                  <BsFillHandThumbsUpFill className='h-5 w-5 text-green-500 likebtn' />
+                  <span>Bugatti Chiron</span>
+                  <BsFillHandThumbsDownFill className='h-5 w-5 text-red-700 dislikebtn' />
+                </div>
+                <div className='video_texts flex w-full p-2 items-center justify-evenly'>
+                  <div className='flex items-center'>
+                    <BsCurrencyRupee /> 
+                    <p>28</p>
+                    <span>Crs</span>
+                  </div>
+                  <div className='flex items-center'>
+                    <GiSpeedometer />
+                    <p>420</p>
+                    <span>kmph</span>
+                  </div>
+                  <div className='flex items-center'>
+                    <Image src="/auto/flag/france.png" alt='logo' height={10} width={20}/>
+                    <span>France</span>
+                  </div>
+                  
                 </div>
               </div>
             </div>
+
+
+             {/* pagani */}
+             <div className='flex flex-col w-[400px] justify-center  bg-slate-900 mb-8'>
+              <video height="200" width="400" controls className='rounded-lg'>
+                <source src="/auto/cars/vids/pagani.mp4" />
+              </video>
+              <div className='video_details flex flex-col h-20 w-full relative'>
+                <div className='flex w-10 h-10 absolute top-1/2 carlogo z-10 right-0'>
+                  <Image src="/auto/cars/pagani.png" alt='car' height={50} width={50} />
+                </div>
+                <div className='flex w- justify-between px-2 py-2 relative z-20'>
+                  <BsFillHandThumbsUpFill className='h-5 w-5 text-green-500 likebtn' />
+                  <span>Pagani Huayra</span>
+                  <BsFillHandThumbsDownFill className='h-5 w-5 text-red-700 dislikebtn' />
+                </div>
+                <div className='video_texts flex w-full p-2 items-center justify-evenly'>
+                  <div className='flex items-center'>
+                    <BsCurrencyRupee /> 
+                    <p>29</p>
+                    <span>Crs</span>
+                  </div>
+                  <div className='flex items-center'>
+                    <GiSpeedometer />
+                    <p>383</p>
+                    <span>kmph</span>
+                  </div>
+                  <div className='flex items-center'>
+                    <Image src="/auto/flag/italy.png" alt='logo' height={10} width={20}/>
+                    <span>Italy</span>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            {/* Mclaren */}
+            <div className='flex flex-col w-[400px] justify-center  bg-slate-900 mb-8'>
+              <video height="200" width="400" controls className='rounded-lg'>
+                <source src="/auto/cars/vids/mclaren.mp4" />
+              </video>
+              <div className='video_details flex flex-col h-20 w-full relative'>
+                <div className='flex w-10 h-10 absolute top-1/2 carlogo z-10 right-0'>
+                  <Image src="/auto/cars/mclaren.png" alt='car' height={50} width={50} />
+                </div>
+                <div className='flex w- justify-between px-2 py-2 relative z-20'>
+                  <BsFillHandThumbsUpFill className='h-5 w-5 text-green-500 likebtn' />
+                  <span>Mclaren P1</span>
+                  <BsFillHandThumbsDownFill className='h-5 w-5 text-red-700 dislikebtn' />
+                </div>
+                <div className='video_texts flex w-full p-2 items-center justify-evenly'>
+                  <div className='flex items-center'>
+                    <BsCurrencyRupee /> 
+                    <p>3.5</p>
+                    <span>Crs</span>
+                  </div>
+                  <div className='flex items-center'>
+                    <GiSpeedometer />
+                    <p>350</p>
+                    <span>kmph</span>
+                  </div>
+                  <div className='flex items-center'>
+                    <Image src="/auto/flag/eng.png" alt='logo' height={10} width={20}/>
+                    <span>Britain</span>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+
+
           </div>
 
-          <div className='autocar mb-10 flex w-full justify-evenly'>
-            {/*Porsche GT3 RS AMG */}
-            <div className='autocar relative flex w-[200px] flex-col items-center justify-center'>
-              <Image
-                src='/auto/cars/gifs/gt3.gif'
-                alt='cars'
-                width={200}
-                height={450}
-                className='rounded-2xl'
-              />
-              <div className='caroverlay absolute flex flex-col rounded-2xl'>
-                <Image
-                  src='/auto/cars/pors.png'
-                  alt='lamborghini logo'
-                  height={75}
-                  width={75}
-                  className='m-2'
-                />
-                <h1 className='text-3xl font-bold'>GT3 RS</h1>
-                <h2 className='flex items-center justify-center text-xl'>
-                  <BsCurrencyRupee /> 3.51 Crore
-                </h2>
-              </div>
-              <div className='comment_section relative mt-3 flex w-full flex-col'>
-                <div className='interactions flex w-full justify-between'>
-                  <BsFillHandThumbsUpFill className='h-5 w-5 text-green-500' />
-                  <BsFillHandThumbsDownFill className='h-5 w-5 text-red-700' />
-                </div>
-              </div>
-            </div>
-
-            {/*Porsche 918 Spyder */}
-            <div className='autocar relative flex w-[200px] flex-col items-center justify-center'>
-              <Image
-                src='/auto/cars/gifs/porsche.gif'
-                alt='cars'
-                width={200}
-                height={450}
-                className='rounded-2xl'
-              />
-              <div className='caroverlay absolute flex flex-col rounded-2xl'>
-                <Image
-                  src='/auto/cars/pors.png'
-                  alt='lamborghini logo'
-                  height={75}
-                  width={75}
-                  className='m-2'
-                />
-                <h1 className='text-3xl font-bold'>918 Spyder</h1>
-                <h2 className='flex items-center justify-center text-xl'>
-                  <BsCurrencyRupee /> 7.5 Crore
-                </h2>
-              </div>
-              <div className='comment_section relative mt-3 flex w-full flex-col'>
-                <div className='interactions flex w-full justify-between'>
-                  <BsFillHandThumbsUpFill className='h-5 w-5 text-green-500' />
-                  <BsFillHandThumbsDownFill className='h-5 w-5 text-red-700' />
-                </div>
-              </div>
-            </div>
-
-            {/* Porsche 911 GT2RS */}
-            <div className='autocar relative flex w-[200px] flex-col items-center justify-center'>
-              <Image
-                src='/auto/cars/gifs/911.gif'
-                alt='cars'
-                width={200}
-                height={450}
-                className='rounded-2xl'
-              />
-              <div className='caroverlay absolute flex flex-col rounded-2xl'>
-                <Image
-                  src='/auto/cars/pors.png'
-                  alt='koenigsegg logo'
-                  height={75}
-                  width={75}
-                  className='m-2'
-                />
-                <h1 className='text-3xl font-bold'>911 GT2 RS</h1>
-                <h2 className='flex items-center justify-center text-xl'>
-                  <BsCurrencyRupee /> 3.88 Crore
-                </h2>
-              </div>
-              <div className='comment_section relative mt-3 flex w-full flex-col'>
-                <div className='interactions flex w-full justify-between'>
-                  <BsFillHandThumbsUpFill className='h-5 w-5 text-green-500' />
-                  <BsFillHandThumbsDownFill className='h-5 w-5 text-red-700' />
-                </div>
-              </div>
-            </div>
-
-            {/* Porsche Spyder */}
-            <div className='autocar relative flex w-[200px] flex-col items-center justify-center'>
-              <Image
-                src='/auto/cars/gifs/spyder.gif'
-                alt='cars'
-                width={200}
-                height={450}
-                className='rounded-2xl'
-              />
-              <div className='caroverlay absolute flex flex-col rounded-2xl'>
-                <Image
-                  src='/auto/cars/lamb.png'
-                  alt='koenigsegg logo'
-                  height={75}
-                  width={75}
-                  className='m-2'
-                />
-                <h1 className='text-3xl font-bold'>918 Spyder</h1>
-                <h2 className='flex items-center justify-center text-xl'>
-                  <BsCurrencyRupee /> 7.5 Crore
-                </h2>
-              </div>
-              <div className='comment_section relative mt-3 flex w-full flex-col'>
-                <div className='interactions flex w-full justify-between'>
-                  <BsFillHandThumbsUpFill className='h-5 w-5 text-green-500' />
-                  <BsFillHandThumbsDownFill className='h-5 w-5 text-red-700' />
-                </div>
-              </div>
-            </div>
-
-            {/* Porsche GT2 RS*/}
-            <div className='autocar relative flex w-[200px] flex-col items-center justify-center'>
-              <Image
-                src='/auto/cars/gifs/gt2rs.gif'
-                alt='cars'
-                width={200}
-                height={450}
-                className='rounded-2xl'
-              />
-              <div className='caroverlay absolute flex flex-col rounded-2xl'>
-                <Image
-                  src='/auto/cars/pors.png'
-                  alt='koenigsegg logo'
-                  height={75}
-                  width={75}
-                  className='m-2'
-                />
-                <h1 className='text-3xl font-bold'>GT2 RS</h1>
-                <h2 className='flex items-center justify-center text-xl'>
-                  <BsCurrencyRupee /> 3.88 Crore
-                </h2>
-              </div>
-              <div className='comment_section relative mt-3 flex w-full flex-col'>
-                <div className='interactions flex w-full justify-between'>
-                  <BsFillHandThumbsUpFill className='h-5 w-5 text-green-500' />
-                  <BsFillHandThumbsDownFill className='h-5 w-5 text-red-700' />
-                </div>
-              </div>
-            </div>
-
-            {/* Porsche GT3 RS */}
-            <div className='autocar relative flex w-[200px] flex-col items-center justify-center'>
-              <Image
-                src='/auto/cars/gifs/gt3rs.gif'
-                alt='cars'
-                width={200}
-                height={450}
-                className='rounded-2xl'
-              />
-              <div className='caroverlay absolute flex flex-col rounded-2xl'>
-                <Image
-                  src='/auto/cars/pors.png'
-                  alt='koenigsegg logo'
-                  height={75}
-                  width={75}
-                  className='m-2'
-                />
-                <h1 className='text-3xl font-bold'>GT3 RS</h1>
-                <h2 className='flex items-center justify-center text-xl'>
-                  <BsCurrencyRupee /> 3.51 Crore
-                </h2>
-              </div>
-              <div className='comment_section relative mt-3 flex w-full flex-col'>
-                <div className='interactions flex w-full justify-between'>
-                  <BsFillHandThumbsUpFill className='h-5 w-5 text-green-500' />
-                  <BsFillHandThumbsDownFill className='h-5 w-5 text-red-700' />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='autocar mb-10 flex w-full justify-evenly'>
-            {/* Mercedes AMG */}
-            <div className='autocar relative flex w-[200px] flex-col items-center justify-center'>
-              <div className='carimage rounded-xl'></div>
-              <div className='caroverlay mercone absolute flex flex-col rounded-2xl'>
-                <Image
-                  src='/auto/cars/pors.png'
-                  alt='koenigsegg logo'
-                  height={75}
-                  width={75}
-                  className='m-2'
-                />
-                <h1 className='text-3xl font-bold'>GT3 RS</h1>
-                <h2 className='flex items-center justify-center text-xl'>
-                  <BsCurrencyRupee /> 3.51 Crore
-                </h2>
-              </div>
-              <div className='comment_section relative mt-3 flex w-full flex-col'>
-                <div className='interactions flex w-full justify-between'>
-                  <BsFillHandThumbsUpFill className='h-5 w-5 text-green-500' />
-                  <BsFillHandThumbsDownFill className='h-5 w-5 text-red-700' />
-                </div>
-              </div>
-            </div>
-          </div>
+         
         </div>
       </div>
     </div>

@@ -18,6 +18,15 @@
     --logo-shadow: #053949;
     --logo-body: #00d8fe;
     --span-bg: linear-gradient(to right, #4e4e9e, #097fa5, #3e87ed);
+    --primary-light: #8abdff;
+    --primary-check: #6d5dfc;
+    --primary-dark: #5b0eeb;
+    --white-check: #FFFFFF;
+    --greyLight-1: #E4EBF5;
+    --greyLight-2: #c8d0e7;
+    --greyLight-3: #bec8e4;
+    --greyDark: #9baacf;
+
   }
   .dark {
     --primary: #d6deff;
@@ -34,6 +43,14 @@
     --logo-shadow: #0a2e36;
     --logo-body: #097fa5;
     --span-bg: linear-gradient(to right, #8c00ff, #0fb4e1, #a1d930, #ae0000);
+    --primary-light: #8abdff;
+    --primary-check: #6d5dfc;
+    --primary-dark: #5b0eeb;
+    --white-check: #FFFFFF;
+    --greyLight-1: #E4EBF5;
+    --greyLight-2: #c8d0e7;
+    --greyLight-3: #bec8e4;
+    --greyDark: #9baacf;
   }
   .sunset {
     --primary: #ff6b6b;
@@ -50,6 +67,14 @@
     --logo-shadow: #333333;
     --logo-body: #ff6b6b;
     --span-bg: linear-gradient(to right, #ff6b6b, #ff9966, #ffcc66);
+    --primary-light: #8abdff;
+    --primary-check: #6d5dfc;
+    --primary-dark: #5b0eeb;
+    --white-check: #FFFFFF;
+    --greyLight-1: #E4EBF5;
+    --greyLight-2: #c8d0e7;
+    --greyLight-3: #bec8e4;
+    --greyDark: #9baacf;
   }
   .instagram {
     --primary: #cc3f7e;
@@ -66,6 +91,14 @@
     --logo-shadow: #000000;
     --logo-body: #cc3f7e;
     --span-bg: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    --primary-light: #8abdff;
+    --primary-check: #6d5dfc;
+    --primary-dark: #5b0eeb;
+    --white-check: #FFFFFF;
+    --greyLight-1: #E4EBF5;
+    --greyLight-2: #c8d0e7;
+    --greyLight-3: #bec8e4;
+    --greyDark: #9baacf;
   }
   .facebook {
     --primary: #3b5998;
@@ -82,6 +115,14 @@
     --logo-shadow: #000000;
     --logo-body: #3b5998;
     --span-bg: linear-gradient(to right, #3b5998, #4267b2, #5578c2);
+    --primary-light: #8abdff;
+    --primary-check: #6d5dfc;
+    --primary-dark: #5b0eeb;
+    --white-check: #FFFFFF;
+    --greyLight-1: #E4EBF5;
+    --greyLight-2: #c8d0e7;
+    --greyLight-3: #bec8e4;
+    --greyDark: #9baacf;
   }
   .discord {
     --primary: #7289da;
@@ -98,6 +139,14 @@
     --logo-shadow: #000000;
     --logo-body: #7289da;
     --span-bg: linear-gradient(to right, #7289da, #7289da, #7289da);
+    --primary-light: #8abdff;
+    --primary-check: #6d5dfc;
+    --primary-dark: #5b0eeb;
+    --white-check: #FFFFFF;
+    --greyLight-1: #E4EBF5;
+    --greyLight-2: #c8d0e7;
+    --greyLight-3: #bec8e4;
+    --greyDark: #9baacf;
   }
   .netflix {
     --primary: #ff0000;
@@ -114,6 +163,14 @@
     --logo-shadow: #000000;
     --logo-body: #ff0000;
     --span-bg: linear-gradient(to right, #ff0000, #ff0000, #ff0000);
+    --primary-light: #8abdff;
+    --primary-check: #6d5dfc;
+    --primary-dark: #5b0eeb;
+    --white-check: #FFFFFF;
+    --greyLight-1: #E4EBF5;
+    --greyLight-2: #c8d0e7;
+    --greyLight-3: #bec8e4;
+    --greyDark: #9baacf;
   }
   .reddit {
     --primary: #ff4500;
@@ -130,6 +187,14 @@
     --logo-shadow: #000000;
     --logo-body: #ff4500;
     --span-bg: linear-gradient(to right, #ff4500, #ff6347, #ff4500);
+    --primary-light: #8abdff;
+    --primary-check: #6d5dfc;
+    --primary-dark: #5b0eeb;
+    --white-check: #FFFFFF;
+    --greyLight-1: #E4EBF5;
+    --greyLight-2: #c8d0e7;
+    --greyLight-3: #bec8e4;
+    --greyDark: #9baacf;
   }
   .twilight {
     --primary: #a296e0;
@@ -146,6 +211,14 @@
     --logo-shadow: #6d6875;
     --logo-body: #8d82c4;
     --span-bg: linear-gradient(to right, #8d82c4, #f7b7a3, #7d9dbf);
+    --primary-light: #8abdff;
+    --primary-check: #6d5dfc;
+    --primary-dark: #5b0eeb;
+    --white-check: #FFFFFF;
+    --greyLight-1: #E4EBF5;
+    --greyLight-2: #c8d0e7;
+    --greyLight-3: #bec8e4;
+    --greyDark: #9baacf;
   }
 }
 
@@ -1401,19 +1474,31 @@ opacity: 0;
   
 .product-card {
   width: 255px;
+  height: 430px;
   position: relative;
   margin: 25px auto;
   background: #ffdef6;
   border-radius: 20px;
 }
+
+.product-card-skeleton{
+  min-width: 255px;
+  position: relative;
+  margin: 25px auto;
+  border-radius: 20px;
+  background: #acacac;
+  max-height: 400px;
+  flex-direction: column;
+}
+
 .product-card-d{
   width: 255px;
+  height: 430px;
   position: relative;
   margin: 25px auto;
   background: #deefff;
   border-radius: 20px;
 }
-
 .badge {
   position: absolute;
   left: 0;
@@ -1429,13 +1514,11 @@ opacity: 0;
 .newhot{
   background: rgb(33, 142, 11);
 }
-
 .newnorm{
   background: rgb(217, 221, 3);
 }
 .newcom{
   background: rgb(221, 3, 3);
-
 }
 
 .product-tumb {
@@ -1448,6 +1531,17 @@ opacity: 0;
   border-radius: 20px;
 }
 
+.product-tumb-skeleton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 190px;
+  min-width: 100%;
+  padding: 10px;
+  background: #939393;
+  border-radius: 20px;
+}
+
 .product-tumb img {
   max-width: 100%;
   max-height: 100%;
@@ -1457,8 +1551,30 @@ opacity: 0;
 
 .product-details {
   padding: 15px;
+  position: relative;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+.product-details-skeleton{
+  padding: 15px;
+  position: relative;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.product-spans{
+  background-color: rgb(201, 201, 201);
+  width: 95%;
+  height: 40px;
+  border-radius: 10px;
+}
 .product-catagory {
   display: block;
   font-size: 10px;
@@ -1486,12 +1602,12 @@ opacity: 0;
   font-size: 11px;
   line-height: 14px;
   margin-bottom: 18px;
-  color: #999;
+  color: #6a6868;
 }
 
 .product-bottom-details {
   overflow: hidden;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #857c7c;
   padding-top: 20px;
 }
 
@@ -2110,6 +2226,13 @@ a {
 
 /* CARS BIKES */
 
+
+
+
+
+
+
+
 .super_sports{
   background-image: linear-gradient(90deg, transparent,rgba(139, 0, 0, 0.050),rgba(139, 0, 0, 0.500),  darkred);
   /* animation: 5s bgcolor infinite;
@@ -2128,6 +2251,7 @@ a {
   }
 }
 
+
 .supertext{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-align: center;
@@ -2135,53 +2259,104 @@ a {
 .sss{
   font-size: 2em;
 }
+.likebtn , .dislikebtn{
+  cursor: pointer;
+  transition: 700ms;
+}
+.likebtn:hover{
+  transform: scale(1.2);
+}
 
-.carimage{
+.video_texts p{
+  margin-inline-start:3px;
+}
+.video_texts span{
+  color: rgb(136, 136, 136);
+  font-size: 10px;
+  align-self:flex-end;
+  margin-left: 2px;
+}
+.carlogo img{
+  opacity: 0.1;
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+.sideNavi {
+  background-color: rgb(45 53 64);
+  align-items: center;
+}
+
+
+.productNavlist li{
+  transition: 700ms;
+  cursor: pointer;
+}
+
+.productNavlist li:hover{
+  transform: scale(1.2);
+}
+
+/*  CHECKBOX  */
+.checkbox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-block:5px;
+}
+
+.checkbox input {
+  display: none;
+}
+.checkbox__1 {
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+.checkbox__1 span{
+  margin-left: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  color: rgb(88, 88, 88);
+}
+.checkbox__1 label {
+  box-shadow: 0.3rem 0.3rem 0.6rem #22272f, -0.2rem -0.2rem 0.5rem #3e454f;
+  cursor: pointer;
   position: relative;
-  background-image: url('../../../public/auto/cars/gifs/merc.PNG');
-  background-position:center;
-  background-size: cover;
-  height: 360px;
-  width: 201px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  top: 0;
-  color: rgba(0, 0, 0, 0.045);
-  transition: 800ms;
+  align-items: center;
+  border-radius: 0.5rem;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.checkbox__1 label:hover svg{
+  color: rgb(109, 109, 109);
+}
+.checkbox__1 label svg {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #2d3540;
+  transition: 0.3s ease;
+}
+.checkbox__1 input:checked ~ label {
+  box-shadow: inset 0.2rem 0.2rem 0.1rem #242833, inset -0.2rem -0.2rem 0.2rem #3b464c;
+}
+.checkbox__1 input:checked ~ label svg {
+  color:rgb(255, 255, 255);
 }
 
-.caroverlay{
-  background: rgba(0, 0, 0, 0.376);
-  height: 360px;
-  width: 201px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  color: rgba(0, 0, 0, 0.045);
-  transition: 800ms;
-}
-
-.caroverlay img{
-  visibility: hidden;
-}
-.caroverlay:hover{
-  background: rgba(0, 0, 0, 0.91);
-  color:white;
-}
-.mercone:hover{
-  background-image: url('../../../public/auto/cars/gifs/mercone.gif');
-  background-position:center;
-  background-size: cover;
-  color:white;
-}
-.caroverlay:hover img{
-  visibility: visible;
-}
-.caroverlay:hover .carimage{
-  background-image: url('../../../public/auto/cars/gifs/mercone.gif');
-  background-position:center;
-  background-size: cover;
-}
+.checkbox__1 input:checked ~ span {
+  color:rgb(255, 255, 255);
 }
